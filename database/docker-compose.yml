@@ -1,0 +1,12 @@
+version: '3.4'
+services: 
+  db-crud-python:
+    build: .
+    image: mongo:4.2
+    container_name: db-crud-python
+    ports:
+      - "27020:27017"
+    volumes: 
+      - ./.docker/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
+      - ./.docker/data/db:/data/db/
+      - ./.docker/dump-bancos:/dump
