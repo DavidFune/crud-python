@@ -1,0 +1,4 @@
+/database/.docker/data
+/database/.docker/dump-bancos
+/.mypy_cache
+/venv

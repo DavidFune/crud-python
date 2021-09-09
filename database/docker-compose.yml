@@ -3,7 +3,7 @@ services:
   db-crud-python:
     build: .
     image: mongo:4.2
-    container_name: db-crud-python
+    container_name: db_crud_python
     ports:
       - "27020:27017"
     volumes: 
